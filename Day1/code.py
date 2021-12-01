@@ -27,12 +27,12 @@ def getNumIncrements(data, n):
     return count
 
 if __name__ == "__main__":
+    # data = [199,200,208,210,200,207,240,269,260,263] # Test data
     data = readInput()
-    #data = [199,200,208,210,200,207,240,269,260,263] # Test data
     n = 1
     count = getNumIncrements(data, n)
-    print("Increment window {} = {}".format(3, count)) #1521
-    
+    print("Window size {}: Number of increments {}".format(n, count)) #1521
+
     n = 3
     count = getNumIncrements(data, n)
-    print("Increment window {} = {}".format(n, count)) #1543
+    print("Window size {}: Number of increments {}".format(n, count)) #1543
